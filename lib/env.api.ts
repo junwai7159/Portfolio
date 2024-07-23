@@ -38,7 +38,7 @@ export const apiVersion =
 //   process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID,
 //   "NEXT_PUBLIC_UMAMI_WEBSITE_ID",
 //   "https://umami.is"
-);
+// );
 
 // Validate env varaibles
 function checkValue<T>(
