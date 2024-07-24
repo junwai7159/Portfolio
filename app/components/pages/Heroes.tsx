@@ -14,7 +14,7 @@ export default async function Heroes() {
   return (
     <section className="mt-32 max-w-5xl">
       <Slide delay={0.17}>
-        <h2 className="text-4xl mb-4 font-bold tracking-tight">Heroes</h2>
+        {/* <h2 className="text-4xl mb-4 font-bold tracking-tight">Heroes</h2>
         <p className="dark:text-zinc-400 text-zinc-600 max-w-2xl">
           Inspired by{" "}
           <RefLink
@@ -28,10 +28,17 @@ export default async function Heroes() {
           <strong className="font-semibold">
             &quot;In no particular order&quot;
           </strong>
-        </p>
+        </p> */}
+
+        <h2 className="text-4xl mb-4 font-bold tracking-tight">Achievements</h2>
+        <p className="dark:text-zinc-400 text-zinc-600 max-w-2xl">Here are some achievements that I'm proud of:</p>
+        <h3 className="font-incognito font-semibold text-2xl mt-6 mb-2">Shanghai Jiao Tong University Outstanding Undergraduate Graduates</h3>
+        <p className="mt-2 ml-2">Awared to one of 22 top graduating International students for the class of 2024.</p>
+        <h3 className="font-incognito font-semibold text-2xl mt-6 mb-2">Shanghai Jiao Tong University International Student Scholarship</h3>
+        <p className="mt-2 ml-2">Awared a half tuition fee waiver for four consecutive years.</p>
       </Slide>
 
-      <ul className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12 tracking-tight">
+      {/* <ul className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12 tracking-tight">
         {heroes.map((heroe) => (
           <li
             key={heroe._id}
@@ -48,7 +55,7 @@ export default async function Heroes() {
             </RefLink>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 }
