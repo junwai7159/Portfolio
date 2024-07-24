@@ -62,13 +62,7 @@ export default async function Usage() {
           to.
         </p>
       </div>
-      {profile.map((textBlock, id) => (
-        <PortableText
-          key={id}
-          value={textBlock.usage}
-          components={CustomPortableTextFavicon}
-        />
-      ))}
+
       <h3 className="font-incognito font-semibold text-2xl mt-6 mb-2">Programming Languages</h3>
       <ul className="mt-2 ml-2">
         <li className="mb-4">
@@ -300,6 +294,16 @@ export default async function Usage() {
           </div>
         </li>
       </ul>
+
+      <div className="mt-6">
+        {profile.map((textBlock, id) => (
+          <PortableText
+            key={id}
+            value={textBlock.usage}
+            components={CustomPortableTextFavicon}
+          />
+        ))}
+      </div>
     </section>
   );
 }
